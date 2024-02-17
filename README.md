@@ -15,6 +15,26 @@
 ```bash
 git clone https://github.com/username/currency-exchange.git
 ```
+Также необходимо установить PostgreSQL
+
+## Использование
+
+Запуск проекта: uvicorn main:app --reload
+
+Откройте браузер и перейдите по адресу: http://localhost:8000
+
+Для проверки работы всех методов можно перейти по адресу: http://localhost:8000/docs
+
+Для получения списка всех валют: GET /currencies
+
+Получение информации о конкретной валюте: GET /currencies/{code}
+
+Добавление новой валюты: POST /currencies
+
+Вывести список всех курсов валют: GET /exchangeRates
+
+Курс обмена между двумя валютами: GET /exchangeRate/{base_code,target_code}
+
 
 
 
